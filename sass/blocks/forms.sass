@@ -1,0 +1,155 @@
+.forms
+
+    background: url('../css/image/forms/bg.jpg') center no-repeat
+
+    width: 100%
+    position: relative
+
+    &-title
+
+        text-transform: uppercase
+
+        width: 100%
+        display: flex
+        justify-content: center
+        position: relative
+
+        @include text($ff-as,$fw500,$px-46,$white)
+
+        letter-spacing: 0
+
+        padding-top: $px-150
+
+        &::before
+            opacity: .6
+            @include before2(150px)
+
+            opacity: .6
+
+    &-inner
+
+        display: flex
+        justify-content: center
+        flex-direction: column
+
+        margin-top: $px-70
+
+        &_item_small
+
+            width: 100%
+
+            display: flex
+            justify-content: center
+
+            input
+
+                width: 30.3%
+                padding: $px-15 0 $px-15 $px-5
+                transition: .2s linear
+                border: none
+
+                &::placeholder
+
+                    font-family: $ff-as
+                    font-weight: $fw400
+                    font-size: $px-16
+
+                    color: $min-black
+
+                &:focus
+                    outline-color: $min-blue
+                    border: 0px
+                    box-shadow: 5px 0px 15px 3px $min-blue, -5px 0px 15px 3px $min-blue
+
+            input:not(:first-child)
+                margin-left: $px-30
+
+        &-item-big
+
+            display: flex
+            justify-content: center
+
+            margin-top: $px-30
+
+            input
+
+                padding: $px-10 0 $px-160 $px-5
+                width: 64.6%
+                transition: .2s linear
+                border: none
+
+                &::placeholder
+
+                    font-family: $ff-as
+                    font-weight: $fw400
+                    font-size: $px-16
+
+                    color: $min-black
+
+                &:focus
+                    outline-color: darken($min-blue, 10%)
+                    border: 0px
+                    box-shadow: 5px 0px 15px 3px $min-blue, -5px 0px 15px 3px $min-blue
+
+        &_button
+            display: flex
+
+            justify-content: center
+            width: 100%
+            margin-top: $px-30
+            margin-bottom: $px-145
+
+            &_send
+                background: $white
+
+                font-family: $ff-as
+                font-weight: $fw500
+                font-size: $px-16
+                color: $great
+                padding: $px-15 $px-25 $px-15 $px-25
+                transition: all .2s linear
+
+                i
+                    margin-left: $px-5
+
+                &:hover
+                    background: darken($white, 30% )
+                    color: $white
+
+
+//Media
+
+
+@media ( max-width: 1180px)
+    .forms
+        &-title
+            padding-top: $px-70
+
+            &::before
+                top: $px-65
+
+@media ( max-width: 776px)
+    .forms
+        &-title
+
+        &-inner
+
+            &_item
+                
+                &_small
+                    flex-direction: column
+                    input
+                        margin: 0 auto $px-30 auto
+                        width: 65%
+
+                    input:not(:first-child)
+                        margin: 0 auto 
+
+@media ( max-width: 550px)
+    .forms
+        &-title   
+            font-size: $px-35
+
+        &-inner
+            margin-top: $px-40       
+

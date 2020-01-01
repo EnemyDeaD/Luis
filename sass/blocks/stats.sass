@@ -1,0 +1,81 @@
+.stats
+
+    background: $sr-bg
+
+    &-inner
+
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+
+        padding: $px-75 0 
+        // margin-bottom: $px-125 
+
+        align-items: center
+
+    &-item
+
+        width: 25%
+        text-align: center
+
+    &-title
+
+        @include text($ff-as,$fw400,$px-30,$min-black)
+
+        margin-top: $px-20
+
+    &-subtitle
+
+        @include text($ff-as,$fw500,$px-22,$min-black)
+        margin-top: $px-5
+
+//Media
+
+@media ( max-width: 995px)
+    .stats
+        &-item
+            width: 22%
+
+        &-subtitle
+
+            font-size: $px-18 
+
+@media ( max-width: 500px)
+    .stats
+        &-inner
+            padding: $px-50 0
+        &-item
+            width: 50%
+
+        &-item:nth-child(1)
+            margin-bottom: $px-20
+
+        &-item:nth-child(2)
+            margin-bottom: $px-20
+            
+
+        &-subtitle
+
+            font-size: $px-18 
+
+@media ( max-width: 370px)
+    .stats
+        &-inner
+            padding: $px-50 0
+        &-item
+            width: 100%
+            margin-bottom: $px-40
+
+        &-item:nth-child(1)
+            margin-bottom: $px-40
+
+        &-item:nth-child(2)
+            margin-bottom: $px-40
+
+        
+            
+
+        &-subtitle
+
+            font-size: $px-18 

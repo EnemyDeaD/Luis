@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7a612667b2.js" crossorigin="anonymous"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <title>Luis</title>
+</head>
+
+<body>
+
+    <!--Sprite-->
+
+    <svg display="none">
+        <symbol id="arrow" viewBox="0 0 492.004 492.004">
+            <g>
+                <path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+                    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+                    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+                    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z" />
+            </g>
+        </symbol>
+    </svg>
+    <!--HEADER-->
+
+    <header class="header" id="header">
+        <!--Container-->
+        <div class="container">
+
+            <div class="header-inner">
+                <div class="header-inner_item header-inner_item_width">
+                    <div class="header-inner_item_logo">
+                        <img src="css/image/header/Vector Smart Object.png" alt="">
+                        <p class="header-inner_item_logo_title">OENRIQUE</p>
+                        <p class="header-inner_item_logo_subtitle">UX/UI EXPERT</p>
+                    </div>
+                </div>
+
+                <div class="header-inner_item header-inner_item_right">
+
+                    <div class="nav-secret">
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="#"  data-scroll="#home">Home</a></li>
+                                <li><a href="#"  data-scroll="#about">About</a></li>
+                                <li><a href="#"  data-scroll="#services">Service</a></li>
+                                <li><a href="#"  data-scroll="#portfolio">Portfolio</a></li>
+                                <li><a href="#"  data-scroll="#contact">Contact</a></li>
+                            </ul>
+    
+                            <div class="nav-close"></div>
+                        </nav>
+                    </div>
+
+                    <div class="header-inner_button" id="burger">
+                        <div class="header-inner_button-cl"></div>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+        </div>
+        <!--/Container-->
+    </header>
+
+    <!--/HEADDER-->
+
+
+    <!--Intro-->
+    <section class="intro" id="home">
+        <!--Container-->
+        <div class="container">
+
+            <div class="intro-inner">
+                <div class="intro-inner_item">
+                    <div class="intro-inner_item_content">
+                        <div class="intro-inner_item_content_text">
+                            <div class="intro-inner_item_content_text_title">
+                                Luis Oenrique
+                            </div>
+                            <div class="intro-inner_item_content_text_subtitle">
+                                User Experience / User Interface Expert
+                            </div>
+                        </div>
+                        <div class="intro-inner_item_content_button">
+                            <a href="#" class="intro-inner_item_content_button_more" id="button_more" data-modal="#modal1">Know More</a>
+                            <a href="#" class="intro-inner_item_content_button_hire" id="button_hire" data-modal="#modal2">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-inner_item intro-inner_face">
+                    <img src="css/image/intro/face.png" alt="Модель">
+                </div>
+            </div>
+
+            <div class="modal" id="modal1">
+                <div class="modal-icon" id="modal-icon">
+                    <h2>Know More</h2>
+                    <p>Testing modal icon</p>
+                    <div class="modal-close" id="modal-close" data-close></div>
+                </div>
+            </div>
+
+            <div class="modal" id="modal2">
+                <div class="modal-icon" id="modal-icon">
+                    <h2>Hire me</h2>
+                    <p>Testing modal icon</p>
+                    <div class="modal-close" id="modal-close" data-close></div>
+                </div>
+            </div>
+        </div>
+        <!--/Container-->
+    </section>
+    <!--/Intro-->
+
+    <!--About-->
+    <section class="about" id="about">
+        <div class="container">
+            <!--Container-->
+            <div class="about-inner">
+                <div class="about-inner_item about-inner_item-one">
+                    <div class="about-inner_item_content">
+                        <div class="about-inner_item_content_title">
+                            KNOW MORE
+                            <br>ABOUT ME
+                        </div>
+                        <div class="about-inner_item_content_subtitle">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean com
+                            <br>modo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                            <br>et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                            <br>felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            <br> massa quis enim.
+                        </div>
+                    </div>
+
+                    <a class="about-inner_item_button" id="button_download" href="#" data-modal="#modal3">Download my cv</a>
+
+                    
+                </div>
+                
+                <div class="about-inner_item about-inner_item-two">
+                    <div class="about-inner_item_img">
+                        <img src="css/image/about/img.png" alt="">
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="modal-icon" id="modal-icon">
+                <h2>Download</h2>
+                <p>Testing modal icon</p>
+                <div class="modal-close" id="modal-close" data-close></div>
+            </div>
+        </div>
+        <!--/Container-->
+    </section>
+    <!--/About-->
+
+    <!--Services-->
+    <section class="services" id="services">
+        <!--Container-->
+        <div class="container">
+
+            <div class="services_title">
+                <h2>Services</h2>
+            </div>
+
+            <div class="services-inner">
+                <div class="services-inner_item  services-inner_item_mb ">
+                    <div class="services-inner_item_icon">
+                        <img src="css/image/services/one.png" alt="User">
+                    </div>
+                    <div class="services-inner_item_title">User Research</div>
+                </div>
+
+                <div class="services-inner_item  services-inner_item_mb mt">
+                    <div class="services-inner_item_icon">
+                        <img src="css/image/services/two.png" alt="Wireframes">
+                    </div>
+                    <div class="services-inner_item_title">IA And Wireframes</div>
+                </div>
+
+                <div class="services-inner_item  services-inner_item_mb">
+                    <div class="services-inner_item_icon">
+                        <img src="css/image/services/fre.png" alt="Testing">
+                    </div>
+                    <div class="services-inner_item_title">User Testing</div>
+                </div>
+
+                <div class="services-inner_item services-inner_item_mb-second mt-2">
+                    <div class="services-inner_item_icon">
+                        <img src="css/image/services/for.png" alt="Design">
+                    </div>
+                    <div class="services-inner_item_title">Looks and Feel Design (UI)</div>
+                </div>
+
+                <div class="services-inner_item mt-3">
+                    <div class="services-inner_item_icon">
+                        <img src="css/image/services/fhy.png" alt="Delivery">
+                    </div>
+                    <div class="services-inner_item_title">Delivery</div>
+                </div>
+
+                <div class="services-inner_item ">
+                    <div class="services-inner_item_icon">
+                        <img src="css/image/services/secs.png" alt="Support">
+                    </div>
+                    <div class="services-inner_item_title">Integration Support</div>
+                </div>
+            </div>
+        </div>
+        <!--/Container-->
+    </section>
+    <!--/Services-->
+
+    <!--Skills-->
+    <section class="skills">
+        <!--Container-->
+        <div class="container">
+
+            <div class="skills_title">
+                <h2>My skills</h2>
+            </div>
+
+            <div class="skills-inner">
+                <img src="css/image/skills/skill.jpg" alt="Skills">
+
+                <div class="skills-inner_smart">
+                    <div class="skills-inner_smart_item">Adobe XD:  <b>81%</b></div>
+                    <div class="skills-inner_smart_item">Adobe After Effects: <b>72%</b></div>
+                    <div class="skills-inner_smart_item">Adobe Photoshop: <b>95%</b></div>
+                    <div class="skills-inner_smart_item">Adobe Illustrator: <b>81%</b></div>
+                </div>
+            </div>
+        </div>
+        <!--/Container-->
+    </section>
+    <!--/Skills-->
+
+    <!--Portfolio-->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio-title">
+                <h2>Portfolio</h2>
+            </div>
+
+            
+            <div class="portfolio-inner">
+                <div class="potfolio-inner_item potfolio-inner_item_mb">
+                    <div class="portfolio-inner_item_img">
+                        <img src="css/image/portfolio/1.png" alt="">
+                        <div class="portfolio-inner_item_img_button">
+                            <svg class="arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="potfolio-inner_item potfolio-inner_item_mb">
+                    <div class="portfolio-inner_item_img">
+                        <img src="css/image/portfolio/2.png" alt="">
+                        <div class="portfolio-inner_item_img_button">
+                            <svg class="arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="potfolio-inner_item potfolio-inner_item_mb">
+                    <div class="portfolio-inner_item_img">
+                        <img src="ss/image/portfolio/3.png" alt="">
+                        <div class="portfolio-inner_item_img_button">
+                            <svg class="arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="potfolio-inner_item">
+                    <div class="portfolio-inner_item_img">
+                        <img src="css/image/portfolio/4.png" alt="">
+                        <div class="portfolio-inner_item_img_button">
+                            <svg class="arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="potfolio-inner_item">
+                    <div class="portfolio-inner_item_img">
+                        <img src="css/image/portfolio/5.png" alt="">
+                        <div class="portfolio-inner_item_img_button">
+                            <svg class="arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="potfolio-inner_item ">
+                    <div class="portfolio-inner_item_img">
+                        <img src="css/image/portfolio/6.png" alt="">
+                        <div class="portfolio-inner_item_img_button">
+                            <svg class="arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-inner_item_add">
+                <div class="potfolio-inner_item">
+                    <div class="portfolio-inner_item_img">
+                        <img src="  css/image/portfolio/6.png" alt="">
+                        <div class="portfolio-inner_item_img_button">
+                            <svg class="arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="potfolio-inner_item">
+                    <div class="portfolio-inner_item_img">
+                        <img src="../css/image/portfolio/4.png" alt="">
+                        <div class="portfolio-inner_item_img_button">
+                            <svg class="arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="potfolio-inner_item">
+                    <div class="portfolio-inner_item_img">
+                        <img src="../css/image/portfolio/5.png" alt="">
+                        <div class="portfolio-inner_item_img_button">
+                            <svg class="arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_button">
+                <a href="#" class="portfolio_button_download" id="portfolio_btn" >LOAD MORE</a>
+            </div>
+
+        </div>
+    </section>
+    <!--/Portfolio-->
+
+    <!--Testimonials-->
+    <section class="testimonials">
+        <div class="container">
+
+            <div class="testimonials-title">
+                <h2>Testimonials</h2>
+            </div>
+
+
+            <div class="testimonials-inner">
+                <div class="testimonials-inner_item">
+                    <div class="testimonials-inner_item_img">
+                        <img src="css/image/testimonials/img .png" alt="author">
+                    </div>
+                    <div class="testimonials-inner_item_content">
+                        <div class="testimonials-inner_item_content_title">Limara tusi </div>
+                        <div class="testimonials-inner_item_content_subtitle">CEO, RanDOM COMPANY</div>
+                        <div class="testimonials-inner_item_content_text">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Testimonials-->
+
+    <!--Stats-->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-inner">
+                <div class="stats-item">
+                    <img src="css/image/stats/study.png" alt="word">
+                    <div class="stats-title"><b>120</b></div>
+                    <div class="stats-subtitle">HANDS TO WORK</div>
+                </div>
+
+                <div class="stats-item">
+                    <img src="css/image/stats/happiness.png" alt="happy">
+                    <div class="stats-title"><b>310</b></div>
+                    <div class="stats-subtitle">HAPPY CLIENT</div>
+                </div>
+
+                <div class="stats-item">
+                    <img src="css/image/stats/delivery-complete.png" alt="compltete">
+                    <div class="stats-title"><b>510</b></div>
+                    <div class="stats-subtitle">FINISHED PROJECT</div>
+                </div>
+
+                <div class="stats-item">
+                    <img src="css/image/stats/cup.png" alt="cup">
+                    <div class="stats-title"><b>720</b></div>
+                    <div class="stats-subtitle">CUPS OF COFFE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Stats-->
+
+    <!--Forms-->
+    <section class="forms" id="contact">
+        <div class="container">
+
+            <div class="forms-title">
+                <h2>SAY HELLO!</h2>
+            </div>
+
+            <div class="forms-inner">
+
+                <div class="forms-inner-item forms-inner_item_small">
+                    <input type="text" placeholder="Name">
+
+                    <input type="text" placeholder="Email">
+                </div>
+
+                <div class="forms-inner-item forms-inner-item-big">
+                    <input type="text" placeholder="Message">
+                </div>
+
+                <div class="forms-inner_button">
+
+                    <a href="#" class="forms-inner_button_send">Send <i class="fas fa-paper-plane"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-block">
+                <div class="footer_line"></div>
+                <div class="footer-inner">
+                    <div class="footer-inner_item">
+                        <div class="footer-inner_item-social">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+
+                        <div class="footer-inner_item-social">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+
+                        <div class="footer-inner_item-social">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+
+                        <div class="footer-inner_item-social">
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+
+                        <div class="footer-inner_item-social">
+                            <i class="fab fa-behance"></i>
+                        </div>
+
+                        <div class="footer-inner_item-social">
+                            <i class="fab fa-dribbble"></i>
+                        </div>
+
+
+                    </div>
+                    <div class="footer-inner_item-two">
+                        <p>2017. All Right Reserved</p>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!--/Forms-->
+
+<script src="./js/main.js"></script>
+</body>
+
+</html>

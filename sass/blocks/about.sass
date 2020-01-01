@@ -1,0 +1,236 @@
+.about
+
+    &-inner
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: $px-110
+        margin-bottom: $px-115
+
+        &_item
+            width: 50%
+
+            &_content
+                margin-bottom: $px-30
+
+                &_title
+
+                    font-family: $ff-as
+                    font-weight: $fw700
+                    font-size: $px-46
+                    color: $great
+
+
+
+                &_subtitle
+
+                    font-family: $ff-as
+                    font-weight: $fw400
+                    font-size: $px-16
+                    color: $great
+                    // width: 88%
+
+                    line-height: $px-26
+
+            &_button
+
+                font-family: $ff-as
+                font-weight: $fw500
+                font-size: $px-16
+                color: $great
+                border: 1px solid $great
+                padding: $px-15 $px-48
+                transition: all .2s linear
+
+                
+
+                text-transform: uppercase
+
+                margin-top: $px-35
+
+                &:hover
+
+                    background: $white
+                    color: $black
+
+                    border: 1px solid $white
+
+                    box-shadow: 0 10px 6px -6px rgba(0, 0, 0, .3)
+
+        &_item-one
+
+            position: relative
+
+            &::before
+                
+                @include before(-15px, $great)
+
+
+@media ( max-width: 1200px)
+    .about
+        &-inner
+            &_item
+                &_content
+                    &_subtitle
+                        br
+                            display: none
+
+@media ( max-width: 1170px )
+
+    .about
+        &-inner
+            justify-content: space-between
+            &_item
+                width: 40%
+                margin-left: $px-30
+                &_img
+                    img
+                        width: 450px
+
+@media ( max-width: 1120px )
+
+    .about
+        &-inner
+            &_item
+                &_img
+                    img
+                        width: 100%
+
+@media ( max-width: 977px )
+
+    .about
+        &-inner
+            &_item
+                &_content
+
+                    &_title
+                        font-size: $px-35
+
+                    &_subtitle
+                        font-size: $px-13
+                
+                &_button
+                    margin-top: $px-30
+
+@media ( max-width: 767px )
+
+    .about
+        &-inner
+            &_item
+                &_img
+                    margin-right: $px-30
+
+                &_content
+
+                    &_title
+                        font-size: $px-30
+
+                    &_subtitle
+                        font-size: $px-11
+                
+                &_button
+                    margin-top: $px-30
+
+
+@media ( max-width: 680px )
+
+    .about
+        &-inner
+            &_item
+                &-one
+                    &::before
+                        width: 40px
+                &_img
+                    margin-right: $px-30
+
+                &_content
+
+                    &_title
+                        font-size: $px-25
+
+                    &_subtitle
+                        font-size: $px-11
+                
+
+@media ( max-width: 625px )
+
+    .about
+        &-inner
+            &_item
+                &-one
+                    &::before
+                        width: 40px
+                &_img
+                    margin-right: $px-30
+
+                &_content
+
+                    &_title
+                        font-size: $px-25
+
+                    &_subtitle
+                        font-size: $px-11
+                        line-height: $px-20
+
+@media ( max-width: 595px )
+
+    .about
+        &-inner
+            &_item
+                &_button
+
+                    padding: $px-15 $px-30
+
+@media ( max-width: 545px )
+
+    .about
+        &-inner
+            margin: $px-75 0 $px-80 0
+
+            &_item
+                &_button
+                    font-size: $px-12
+                    padding: $px-15 $px-30
+
+                &_content
+
+                    &_title
+                        font-size: $px-20
+
+                    &_subtitle
+                        font-size: $px-10
+                        line-height: $px-18
+
+
+@media ( max-width: 500px )
+
+    .about
+        &-inner
+            margin: $px-75 0 $px-45                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          0
+            flex-direction: column
+            
+            &_item
+                width: 100%
+
+                &-one
+                    margin-bottom: $px-40   
+
+                &_button
+                    font-size: $px-12
+                    padding: $px-15 $px-30
+
+                &_content
+                    margin-right: $px-30
+
+                    &_title
+                        font-size: $px-20
+
+                    &_subtitle
+                        font-size: $px-10
+                        line-height: $px-18
+
+        
+
+
+
+                

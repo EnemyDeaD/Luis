@@ -1,0 +1,71 @@
+.skills
+
+    &_title
+
+        text-transform: uppercase
+
+        width: 100%
+        display: flex
+        justify-content: center
+        position: relative
+
+        @include text($ff-as,$fw700,$px-46,$great)
+
+        margin-top: 140px
+        letter-spacing: 0
+
+        &::before
+
+            @include before(-5px, $great)
+
+    &-inner
+        display: flex
+        justify-content: center
+        position: relative
+        margin-bottom: $px-140
+
+        img
+            margin-top: $px-55
+            width: 100%
+
+        &_smart
+            margin-top: $px-40
+            margin-left: $px-30
+            display: none
+
+            &_item
+                @include text($ff-as,$fw700,$px-20,$great)
+                b
+                    color: $black
+
+            &_item:not(:last-child)
+                    margin-bottom: $px-25
+
+//Media
+
+@media ( max-width: 1180px)
+    .skills
+        &_title
+            margin-top: $px-70
+
+
+@media ( max-width: 767px)
+    .skills
+        &_title
+
+        &-inner
+
+@media ( max-width: 550px)
+    .skills
+        &_title
+            font-size: $px-35
+
+        &-inner
+
+            margin-bottom: $px-60
+
+            img
+                display: none
+
+            &_smart
+                display: block

@@ -1,0 +1,136 @@
+.testimonials
+
+    &-title
+
+        text-transform: uppercase
+
+        width: 100%
+        display: flex
+        justify-content: center
+        position: relative
+
+        @include text($ff-as,$fw700,$px-46,$great)
+
+        letter-spacing: 0
+
+        padding-top: $px-150
+
+        &::before
+            @include before(150px, $great)
+
+    &-inner
+        
+        margin-top: $px-50
+        margin-bottom: $px-125
+
+        &_item
+
+            display: flex
+            border: 1px solid $black
+            
+            width: 83%
+            padding: $px-80 $px-50 $px-80 $px-120
+
+            margin: 0 auto
+
+            &_content
+
+                margin-left: $px-30
+
+                &_title
+
+                    @include text($ff-as,$fw500,$px-30,$min-black)
+
+                    text-transform: uppercase
+
+
+
+                &_subtitle
+
+                    @include text($ff-as,$fw100,$px-12,$min-black)
+
+                    font-style: italic
+
+                    margin-bottom: $px-10
+
+
+                &_text
+
+                    // width: 590px
+                    line-height: $px-20
+                    opacity: .6
+                    text-transform: uppercase
+                    @include text($ff-as,$fw400,$px-16,$min-black)
+
+//Media
+
+@media ( max-width: 1180px)
+
+    .testimonials
+        &-title
+
+            padding-top: $px-70
+            &::before
+               top: $px-65 
+
+
+@media ( max-width: 995px)
+
+    .testimonials
+
+        &-inner
+            &_item
+                padding: 80px 50px 
+
+@media ( max-width: 730px )
+
+    .testimonials
+
+        &-inner
+
+            &_item
+                padding: 50px 50px 
+
+@media ( max-width: 579px )
+
+    .testimonials
+
+        &-inner
+
+            margin-bottom: $px-70
+
+            &_item
+                padding: 50px 25px 
+                flex-direction: column
+                text-align: center
+                
+                &_img
+                    margin-bottom: $px-10
+
+                &_content
+                    margin-left: 0
+
+
+@media ( max-width: 550px)
+
+    .testimonials
+
+        &-title
+
+            font-size: $px-30
+
+            &::before
+                
+                top: $px-65
+
+@media ( max-width: 430px)
+    .testimonials
+        &-title
+            padding-bottom: $px-20
+
+        &-inner
+            margin-top: 0
+
+
+
+                    

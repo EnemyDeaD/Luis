@@ -1,0 +1,30 @@
+@mixin text($family, $weight, $size, $color)
+
+    font:
+        family: $family
+        weight: $weight
+        size: $size
+
+    color: $color
+
+@mixin before($top, $color)
+
+    position: absolute
+    content: ""
+    display: block
+    top: $top
+
+    width: $px-60
+    height: $px-4
+    background: $color
+
+@mixin before2($top)
+
+    position: absolute
+    content: ""
+    display: block
+    top: $top
+
+    width: $px-60
+    height: $px-4
+    background: $white

@@ -1,0 +1,674 @@
+.intro
+
+    display: flex
+
+    align-items: center
+    width: 100%
+    height: 790px
+    -webkit-background-size: cover
+    background-size: cover
+
+    background: url('../css/image/intro/bg-intro.jpg') center no-repeat
+
+    &-inner
+
+        display: flex
+        align-items: center
+
+        &_item
+
+            display: flex
+            align-items: center
+
+            width: 50%
+
+            &_content
+                &_text
+                    &_title
+
+                        font-family: $ff-as
+                        font-weight: $fw500
+                        font-size: $px-90
+                        color: $great
+
+                    &_subtitle
+
+                        font-family: $ff-as
+                        font-weight: $fw500
+                        font-size: $px-22
+                        color: $great
+
+                &_button
+
+                    margin-top: $px-50
+
+                    &_more, &_hire
+
+                        font-family: $ff-as
+                        font-weight: $fw500
+                        font-size: $px-16
+                        color: $great
+
+                        border: 1px solid $great
+
+                        padding: $px-20 $px-30
+
+                        transition: all .2s linear
+
+                        z-index: 250
+                        position: sticky
+
+
+                        &:hover
+
+                            background: $white
+                            color: $black
+
+                            border: 1px solid $white
+
+                            box-shadow: 0 10px 6px -6px rgba(0, 0, 0, .3)
+
+                    &_hire
+                        padding: $px-20 $px-45
+                        margin-left: $px-15
+
+        &_face
+            display: flex
+            justify-content: center
+            position: relative
+
+            img
+                position: absolute
+                bottom: -397px
+                left: -30px
+
+.modal
+
+    position: fixed
+    z-index: 2000
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, .8)
+    display: none
+
+
+
+    &.show
+        display: block
+
+        
+        
+
+    &-icon
+        position: absolute
+        width: 400px
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        padding: 40px
+        background: $white
+        color: $black
+        text-align: center
+
+        opacity: 0
+        transition: all .2s linear 
+
+
+ 
+    &-close
+        position: absolute
+        top: -15px
+        right: 15px
+        width: 25px
+        height: 23px
+        cursor: pointer
+
+        &::before, &::after
+            content: ""
+            background: $black
+            position: absolute
+            height: 2px
+            width: 31px
+            top: 30px
+            left: -4px
+            
+        &::before
+            transform: rotate(45deg)
+        
+        &::after
+            transform: rotate(-45deg)
+        
+@keyframes fade 
+    from 
+         opacity: 0
+to 
+     opacity: 1 
+
+            
+            
+
+
+//Media
+    
+
+@media ( max-width: 1120px)
+    .intro
+        &-inner
+            &_item
+
+                &_content
+                    margin-left: $px-30
+
+                    &_text
+
+                        &_title
+
+                            font-size: $px-85
+
+            &_face
+                img
+
+                    width: 540px
+
+                    bottom: -330px
+                    left: -10px
+
+@media ( max-width: 1060px)
+    .intro
+        height: 700px
+
+        &-inner
+            &_item
+
+                &_content
+                    margin-left: $px-30
+
+                    &_text
+
+                        &_title
+                            line-height: $px-75
+                            font-size: $px-85
+                            margin-bottom: $px-25
+
+                        
+            &_face
+                img
+
+                    width: 500px
+
+                    bottom: -334px
+                    left: -10px
+
+@media ( max-width: 992px)
+    .intro
+        height: 700px
+
+        &-inner
+            &_item
+
+                &_content
+                    margin-left: $px-30
+
+                    &_text
+
+                        &_title
+                            line-height: $px-75
+                            font-size: $px-75
+                            margin-bottom: $px-25
+
+                        &_subtitle
+                            font-size: $px-15
+
+            &_face
+                img
+
+                    width: 475px
+
+                    bottom: -295px
+                    left: 0px
+
+@media ( max-width: 890px)
+    .intro
+        height: 700px
+
+        &-inner
+            &_item
+
+                &_content
+                    margin-left: $px-30
+
+                    &_text
+
+                        &_title
+                            line-height: $px-75
+                            font-size: $px-65
+                            margin-bottom: $px-25
+
+                        &_subtitle
+                            font-size: $px-13
+
+            &_face
+                img
+
+                    width: 410px
+
+                    bottom: -220px
+                    left: 0px
+
+@media ( max-width: 820px)
+    .intro
+        height: 635px
+
+        &-inner
+            &_item
+
+                &_content
+                    margin-left: $px-30
+
+                    &_text
+
+                        &_title
+                            line-height: $px-75
+                            font-size: $px-65
+                            margin-bottom: $px-25
+
+                        &_subtitle
+                            font-size: $px-13
+
+            &_face
+                img
+
+                    width: 370px
+
+                    bottom: -230px
+                    left: 0px
+
+@media ( max-width: 745px)
+    .intro
+        height: 635px
+
+        &-inner
+            &_item
+
+                &_content
+                    margin-left: $px-30
+
+                    &_text
+
+                        &_title
+                            line-height: $px-65
+                            font-size: $px-60
+                            margin-bottom: $px-25
+
+                        &_subtitle
+                            font-size: $px-13
+
+                    &_button
+
+                        &_hire, &_more
+                            font-size: $px-13
+
+            &_face
+                img
+
+                    width: 370px
+
+                    bottom: -230px
+                    left: -20px
+    
+    .modal 
+        width: 100%
+        height: 100%
+        font-size: $px-15
+
+
+@media ( max-width: 700px)
+    .intro
+        height: 525px
+
+        &-inner
+            &_item
+
+                &_content
+
+                    &_text
+
+                        &_title
+                            line-height: $px-65
+                            font-size: $px-60
+                            margin-bottom: $px-25
+
+
+                    &_button
+
+                        &_hire, &_more
+                            font-size: $px-13
+
+            &_face
+                img
+
+                    width: 335px
+
+                    bottom: -200px
+                    left: -10px
+
+@media ( max-width: 660px)
+    .intro
+        height: 525px
+
+        &-inner
+            &_item
+
+                &_content
+
+                    &_text
+
+                        &_title
+                            line-height: $px-65
+                            font-size: $px-60
+                            margin-bottom: $px-25
+
+
+                    &_button
+
+                        &_hire, &_more
+                            font-size: $px-10
+
+            &_face
+                img
+
+                    width: 310px
+
+                    bottom: -200px
+                    left: 0px
+
+
+@media ( max-width: 620px)
+    .intro
+        height: 470px
+
+        &-inner
+            &_item
+
+                &_content
+
+                    &_text
+
+                        &_title
+                            line-height: $px-50
+                            font-size: $px-50
+                            margin-bottom: $px-15
+
+
+                    &_button
+
+                        margin-bottom: $px-20
+
+                        &_hire, &_more
+
+                            font-size: $px-10
+                            padding: $px-15 $px-30
+
+            &_face
+                img
+
+                    width: 255px
+
+                    bottom: -170px
+                    left: 25px
+                    
+
+@media ( max-width: 565px)
+    .intro
+        height: 425px
+
+        &-inner
+            &_item
+
+                &_content
+
+                    margin-left: $px-20
+
+                    &_text
+
+                        &_title
+                            line-height: $px-50
+                            font-size: $px-50
+                            margin-bottom: $px-15
+
+
+                    &_button
+
+                        margin-bottom: $px-20
+
+                        &_hire, &_more
+
+                            font-size: $px-10
+                            padding: $px-15 $px-30
+
+            &_face
+                img
+
+                    width: 230px
+
+                    bottom: -135px
+                    left: 25px
+
+@media ( max-width: 520px )
+    .intro
+        height: 425px
+
+        &-inner
+            &_item
+
+                &_content
+
+                    margin-left: $px-20
+
+                    &_text
+
+                        &_title
+                            line-height: $px-50
+                            font-size: $px-40
+                            margin-bottom: $px-15
+
+                        &_subtitle
+                            font-size: $px-10
+
+
+                    &_button
+
+                        margin-bottom: $px--10
+                        margin-top: $px-30
+
+                        &_hire, &_more
+
+                            font-size: $px-10
+                            padding: $px-10 $px-20
+
+            &_face
+                img
+
+                    width: 230px
+
+                    bottom: -135px
+                    left: 0px
+
+@media ( max-width: 520px )
+    .intro
+        height: 425px
+
+        &-inner
+            &_item
+
+                &_content
+
+                    margin-left: $px-20
+
+                    &_text
+
+                        &_title
+                            line-height: $px-40
+                            font-size: $px-35
+                            margin-bottom: $px-10
+
+                        &_subtitle
+                            font-size: $px-7
+
+
+                    &_button
+
+                        margin-bottom: $px--10
+                        margin-top: $px-30
+
+                        &_hire, &_more
+
+                            font-size: $px-7
+                            padding: $px-10 $px-20
+
+            &_face
+                img
+
+                    width: 230px
+
+                    bottom: -135px
+                    left: -20px
+
+
+@media ( max-width: 440px )
+    .intro
+        height: 375px
+
+        &-inner
+            &_item
+
+                &_content
+
+                    margin-left: $px-20
+
+                    &_text
+
+                        &_title
+                            line-height: $px-40
+                            font-size: $px-35
+                            margin-bottom: $px-10
+
+                        &_subtitle
+                            font-size: $px-7
+
+
+                    &_button
+
+                        margin-bottom: $px--10
+                        margin-top: $px-30
+
+                        &_hire, &_more
+
+                            font-size: $px-7
+                            padding: $px-10 $px-20
+
+                        &_hire
+                            margin-left: $px-5
+
+            &_face
+                img
+
+                    width: 210px
+
+                    bottom: -125px
+                    left: -20px
+
+    .modal-icon
+        width: 290px
+
+@media ( max-width: 390px )
+    .intro
+        height: 375px
+
+        &-inner
+            &_item
+
+                &_content
+
+                    &_button
+
+                        &_hire, &_more
+
+                            font-size: $px-7
+                            padding: $px-10 $px-16
+
+
+            &_face
+                img
+
+                    width: 190px
+
+                    bottom: -125px
+                    left: -10px
+
+@media ( max-width: 365px )
+    .intro
+        height: 340px
+
+        &-inner
+            &_item
+
+                &_content
+
+                    &_text
+                        &_title
+                                line-height: $px-35
+                                font-size: $px-30
+                            
+                    &_button
+
+                        margin-top: $px-20
+
+                        &_hire, &_more
+
+                            font-size: $px-7
+                            padding: $px-10 $px-16
+
+
+            &_face
+                img
+
+                    width: 160px
+
+                    bottom: -95px
+                    left: 0px
+
+@media ( max-width: 330px )
+    .intro
+        height: 340px
+
+        &-inner
+            &_item
+
+                &_content
+
+                
+                            
+                    &_button
+
+                        margin-top: $px-20
+
+                        &_hire, &_more
+
+                            font-size: $px-7
+                            padding: $px-10 $px-16
+
+                        &_hire
+                            
+                            margin-left: 0px
+
+
+            &_face
+                img
+
+                    width: 160px
+
+                    bottom: -95px
+                    left: 0px

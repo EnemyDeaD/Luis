@@ -1,0 +1,115 @@
+.services
+
+    background: $sr-bg
+    
+    &_title
+
+        width: 100%
+
+        display: flex
+        justify-content: center
+        text-transform: uppercase
+
+        @include text($ff-as,$fw700,$px-46,$great)
+
+        position: relative
+        letter-spacing: 0
+
+        &::before
+            
+            @include before(none, $great)
+
+        padding-top: $px-140
+    
+    &-inner
+
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+
+        padding-top: $px-60
+
+        padding-bottom: $px-150
+
+        &_item
+
+            text-align: center
+
+            width: 33%
+
+
+            &_title
+
+                @include text($ff-as,$fw500,$px-24,$great)
+
+                margin-top: $px-5
+
+        &_item_mb
+                
+                margin-bottom: $px-85
+
+//Media
+
+@media ( max-width: 920px)
+    .services
+        &_title
+            padding-top: $px-70
+            padding-bottom: $px-70
+        &-inner
+            padding-top: 0px
+
+
+
+@media ( max-width: 600px)
+    .services
+        &_title
+            padding-top: $px-70
+            padding-bottom: $px-70
+        &-inner
+            
+            &_item
+                width: 50%
+
+                &_mb-second
+                    margin-bottom: 85px
+
+    .mt
+        margin-top: $px-20
+
+    .mt-2
+        margin-top: $px-16
+
+@media ( max-width: 550px)
+    .services
+        &_title
+            font-size: $px-35
+
+
+@media ( max-width: 430px)
+    .services
+        &_title
+            padding-top: $px-70
+            padding-bottom: $px-20
+
+        &-inner
+            padding-bottom: $px-60
+            
+            &_item
+                width: 100%
+
+                &_mb-second
+                    margin-bottom: $px-35
+                
+                &_mb
+                    margin-bottom: $px-35
+
+    .mt
+        margin-top: $px-20
+
+    .mt-2
+        margin-top: 0px
+
+    .mt-3
+        margin-bottom: $px-35
+
+    

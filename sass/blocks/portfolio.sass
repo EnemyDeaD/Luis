@@ -1,0 +1,206 @@
+.portfolio
+
+    background: $sr-bg
+    &-title
+
+        text-transform: uppercase
+
+        width: 100%
+        display: flex
+        justify-content: center
+        position: relative
+
+        @include text($ff-as,$fw700,$px-46,$great)
+
+        letter-spacing: 0
+
+        padding-top: $px-150
+
+        &::before
+            @include before(65px, $great)
+
+        
+
+    &-inner
+
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+        margin-top: $px-45
+        margin-bottom: $px-40
+
+    &_button
+
+        display: flex
+        width: 100%
+        justify-content: center
+        padding-bottom: $px-120
+
+        &_download
+
+            @include text($ff-as,$fw500,$px-16,$great)
+
+            border: 1px solid $great
+            padding: $px-15 $px-48
+            transition: all 0.2s linear
+            text-transform: uppercase
+
+            &:hover
+
+                background: $white
+                color: $black
+
+                border: 1px solid $white
+
+                box-shadow: 10px 10px 6px -6px rgba(0, 0, 0, .3)
+
+.portfolio-inner_item_add
+
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: $px-40
+
+
+.potfolio-inner_item
+
+    width: 32%
+    display: block
+
+    position: relative
+    transition: all .2s linear
+
+    &:hover
+
+        box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.22)
+
+        .portfolio-inner_item_img
+
+            img
+                opacity: 0.3
+
+            &_button
+
+                opacity: 1
+
+    &.potfolio-inner_item_mt
+        margin-top: $px-25
+        display: block
+
+
+
+
+.portfolio-inner_item_img
+
+    background: $black
+
+    img
+        width: 101%
+        display: block
+
+        height: 320px
+
+        transition: opacity .2s linear
+
+    &_button
+
+        cursor: pointer
+        width: $px-55
+        height: $px-55
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+        background: $white
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate3d(-50%,-50%,0)
+
+        opacity: 0
+
+        transition: all .2s linear
+
+        &:hover
+            background: $black
+
+            .arrow
+                fill: $white
+
+        .arrow
+            width: $px-10
+            height: $px-15
+            fill: $black
+
+            transition: all .2s linear
+
+.potfolio-inner_item_mb
+    margin-bottom: $px-35
+
+//Media
+
+@media ( min-width: 1180px)
+    .portfolio
+        &-title
+            padding-top: $px-70
+            &::before
+               top: $px-65
+
+@media ( max-width: 1180px)
+    .portfolio
+        &-title
+            padding-top: $px-70
+             
+
+@media ( max-width: 987px)
+    .potfolio
+        &-inner
+            &_item
+                width: 48%
+
+@media ( max-width: 767px)
+    .potfolio
+        &-inner
+            margin-bottom: 0px  
+            &_item
+                width: 100%
+                margin: 0 $px-100 $px-55 $px-100
+
+    .portfolio
+        &_button
+            padding-bottom: $px-70
+
+@media ( max-width: 550px)
+    .potfolio
+        &-inner
+            
+            &_item
+                width: 62%
+
+    .portfolio
+        &-inner
+            margin-bottom: 0px
+            
+        &-title
+            font-size: $px-35
+            &::before
+                top: $px-65
+
+@media ( max-width: 475px)
+    .potfolio
+        &-inner
+            &_item
+                width: 75%
+                margin: 0 auto $px-55 auto
+
+@media ( max-width: 430px)
+    .portfolio
+        &-title
+            padding-bottom: $px-20
+
+        &-inner
+            margin-top: 0
+
+
